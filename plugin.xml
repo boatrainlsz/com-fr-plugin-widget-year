@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<plugin>
+    <id>com.fr.plugin.widget.year.all</id>
+    <name><![CDATA[年份选择控件10]]></name>
+    <active>yes</active>
+    <version>3.2.2</version>
+    <env-version>10.0</env-version>
+    <jartime>2019-11-08</jartime>
+    <vendor>左良</vendor>
+    <description><![CDATA[年份选择控件。]]></description>
+    <change-notes>
+        <![CDATA[
+         <p>[2019-3-05]onlyxx:反射支持老版本</p>
+           <p>[2019-5-08]onlyxx:更新通杀版本支持8，9，10模板</p>
+            <p>[2019-5-13]更新一个bug</p>
+        ]]>
+    </change-notes>
+    <extra-core>
+        <LocaleFinder class="com.fr.plugin.widget.year.ActualLocaleFinder"/>
+    </extra-core>
+    <extra-form>
+    </extra-form>
+    <extra-report>
+        <CssFileHandler class="com.fr.plugin.widget.year.CssFileHandler"/>
+        <JavaScriptFileHandler class="com.fr.plugin.widget.year.JavaScriptFile"/>
+    </extra-report>
+    <extra-designer>
+        <FormWidgetOptionProvider class="com.fr.plugin.widget.year.YearWidgetOptionProvider"/>
+        <ParameterWidgetOptionProvider class="com.fr.plugin.widget.year.YearWidgetOptionProvider"/>
+        <FormWidgetOptionProvider class="com.fr.plugin.widget.year.YearDWidgetOptionProvider"/>
+        <ParameterWidgetOptionProvider class="com.fr.plugin.widget.year.YearDWidgetOptionProvider"/>
+        <CellWidgetOptionProvider class="com.fr.plugin.widget.year.CellYearWidgetOptionProvider"/>
+    </extra-designer>
+
+    <function-recorder class="com.fr.plugin.widget.year.YearControl"/>
+
+</plugin>
+
